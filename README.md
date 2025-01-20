@@ -11,6 +11,8 @@ The goal is to evaluate their effectiveness in classifying a given dataset and t
 
 ## Dataset
 <pre>
+The dataset contains 20,000 records.
+
 Customer ID          0
 Age                  0
 Gender               0
