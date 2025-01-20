@@ -15,7 +15,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 label_encoder = LabelEncoder()
 
-dataset = pd.read_csv('Electronic_sales_Sep2023-Sep2024.csv');
+dataset = pd.read_csv('Electronic_sales_Sep2023-Sep2024.csv')
 
 dataset = dataset.drop('Customer ID',axis=1)
 dataset = dataset.drop('Add-ons Purchased',axis=1)
