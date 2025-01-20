@@ -35,3 +35,39 @@ Add-on Total         0
 | K-Nearest Neighbors (KNN)        | 58%           |  
 | Decision Tree                    | 55%           |
 </pre>
+
+
+## Data Preprocessing
+<pre>
+Unrelated attribues were dropped like 
+'Customer ID',
+'Add-ons Purchased',
+'Add-on Total',
+'Shipping Type',
+'Quantity',
+'Unit Price'
+</pre>
+by
+<pre>
+dataset.drop('Customer ID',axis=1)
+dataset.drop('Add-ons Purchased',axis=1)
+dataset.drop('Add-on Total',axis=1)
+dataset.drop('Shipping Type',axis=1)
+dataset.drop('Quantity',axis=1)
+dataset.drop('Unit Price',axis=1)
+</pre>
+
+### Standardization
+<pre>
+scaler = StandardScaler()
+X = scaler.fit_transform(dataset)
+</pre>
+
+### Label Encoding
+<pre>
+label_encoder = LabelEncoder()
+categorical_columns = dataset.select_dtypes(include=['object']).columns
+
+for col in categorical_columns:
+    dataset[col] = label_encoder.fit_transform(dataset[col])
+</pre>
