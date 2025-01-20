@@ -10,6 +10,7 @@ This project aims to compare the performance of three different classification a
 The goal is to evaluate their effectiveness in classifying a given dataset and to analyze their respective test results.
 
 ## Dataset
+<pre>
 Customer ID          0
 Age                  0
 Gender               0
@@ -28,7 +29,8 @@ Add-ons Purchased    0
 Add-on Total         0
 
 | Algorithm                           Accuracy (%) 
-|----------------------------------|---------------|
-| Artificial Neural Networks (ANN) | 67            |
-| K-Nearest Neighbors (KNN)        | 58%           |
+|----------------------------------|---------------|  
+| Artificial Neural Networks (ANN) | 67%           |  
+| K-Nearest Neighbors (KNN)        | 58%           |  
 | Decision Tree                    | 55%           |
+</pre>
