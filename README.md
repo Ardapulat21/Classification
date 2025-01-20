@@ -10,9 +10,8 @@ This project aims to compare the performance of three different classification a
 The goal is to evaluate their effectiveness in classifying a given dataset and to analyze their respective test results.
 
 ## Dataset
-<pre>
 The dataset contains 20,000 records.
-
+<pre>
 Customer ID          0
 Age                  0
 Gender               0
